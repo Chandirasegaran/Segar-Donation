@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
   font-family: NexaLight;
-  src: url(./assets/Fonts/NexaLight.otf) format("opentype");
+  src: url("https://chandirasegaran.github.io/segar-donation/assets/Fonts/NexaLight.otf") format("opentype");
   font-style: normal;
 }
 /* Navbar Brand */
@@ -89,7 +89,7 @@ footer {
 
 @media (min-width: 600px) {
   .home-body {
-    background-image: url("./assets/Images/DefaultBg.jpg");
+    background-image: url("https://chandirasegaran.github.io/segar-donation/assets/Images/DefaultBg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
