@@ -12,6 +12,27 @@
     font-weight: bold;
 }
 
+// Animation Try
+
+.animate{
+    animation: transitionIn 0.75s;
+    color: whitesmoke;
+    font-family: NexaLight;
+    font-size: 32px;
+    text-align: justify;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Body */
 .home-body {
     background-image: url("/assets/Images/DefaultBg.jpg");
