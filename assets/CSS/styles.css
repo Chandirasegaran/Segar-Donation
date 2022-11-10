@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
   font-family: NexaLight;
-  src: url(/assets/Fonts/NexaLight.otf) format("opentype");
+  src: url(./assets/Fonts/NexaLight.otf) format("opentype");
   font-style: normal;
 }
 /* Navbar Brand */
@@ -42,7 +42,7 @@
 }
 /* Body */
 .home-body {
-  background-image: url("/assets/Images/DefaultBg.jpg");
+  background-image: url("./assets/Images/DefaultBg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -50,7 +50,7 @@
 }
 
 .about-body {
-  background-image: url("/assets/Images/aboutusbg.png");
+  background-image: url("./assets/Images/aboutusbg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -58,7 +58,7 @@
 }
 
 .contact-body {
-  background-image: url("/assets/Images/contactusbg.jpg");
+  background-image: url("./assets/Images/contactusbg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -66,7 +66,7 @@
 }
 
 .donation-body {
-  background-image: url("/assets/Images/donatebg.jpg");
+  background-image: url("./assets/Images/donatebg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -89,28 +89,28 @@ footer {
 
 @media (min-width: 600px) {
   .home-body {
-    background-image: url("/assets/Images/DefaultBg.jpg");
+    background-image: url("./assets/Images/DefaultBg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
   }
   .donation-body {
-    background-image: url("/assets/Images/donatebg.jpg");
+    background-image: url("./assets/Images/donatebg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
   }
   .about-body {
-    background-image: url("/assets/Images/aboutusbg.png");
+    background-image: url("./assets/Images/aboutusbg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
   }
   .contact-body {
-    background-image: url("/assets/Images/contactusbg.jpg");
+    background-image: url("./assets/Images/contactusbg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
