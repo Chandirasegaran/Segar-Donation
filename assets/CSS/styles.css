@@ -1,10 +1,11 @@
 /* Fonts */
 @font-face {
   font-family: "NexaLight";
-  src: url("/assets/Fonts/NexaLight.ttf.woff") format("woff"), url("/assets/Fonts/NexaLight.ttf.svg#NexaLight") format("svg"), url("/assets/Fonts/NexaLight.ttf.eot"), url("/assets/Fonts/NexaLight.ttf.eot?#iefix") format("embedded-opentype");
+  src: url("../Fonts/NexaLight.ttf.woff") format("woff"), url("../Fonts/NexaLight.ttf.svg#NexaLight") format("svg"), url("../Fonts/NexaLight.ttf.eot"), url("../Fonts/NexaLight.ttf.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
+
 /* Navbar Brand */
 .navbar {
   font-family: "NexaLight";
@@ -13,7 +14,7 @@
 
 .animate {
   -webkit-animation: transitionIn 0.75s;
-          animation: transitionIn 0.75s;
+  animation: transitionIn 0.75s;
   color: whitesmoke;
   font-family: NexaLight;
   font-size: 32px;
@@ -25,6 +26,7 @@
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -36,14 +38,16 @@
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 /* Body */
 .home-body {
-  background-image: url("/assets/Images/DefaultBg.jpg");
+  background-image: url("../Images/DefaultBg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -51,7 +55,7 @@
 }
 
 .about-body {
-  background-image: url("/assets/Images/aboutusbg.png");
+  background-image: url("../Images/aboutusbg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -59,7 +63,7 @@
 }
 
 .contact-body {
-  background-image: url("/assets/Images/contactusbg.jpg");
+  background-image: url("../Images/contactusbg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -67,7 +71,7 @@
 }
 
 .donation-body {
-  background-image: url("/assets/Images/donatebg.jpg");
+  background-image: url("../Images/donatebg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -90,31 +94,36 @@ footer {
 
 @media (min-width: 600px) {
   .home-body {
-    background-image: url("/assets/Images/DefaultBg.jpg");
+    background-image: url("../Images/DefaultBg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
   }
+
   .donation-body {
-    background-image: url("/assets/Images/donatebg.jpg");
+    background-image: url("../Images/donatebg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
   }
+
   .about-body {
-    background-image: url("/assets/Images/aboutusbg.png");
+    background-image: url("../Images/aboutusbg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
   }
+
   .contact-body {
-    background-image: url("/assets/Images/contactusbg.jpg");
+    background-image: url("../Images/contactusbg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
