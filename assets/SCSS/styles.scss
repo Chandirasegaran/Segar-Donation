@@ -1,0 +1,267 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'NexaLight';
+    src: url('../Fonts/NexaLight.ttf.woff') format('woff'),
+        url('../Fonts/NexaLight.ttf.svg#NexaLight') format('svg'),
+        url('../Fonts/NexaLight.ttf.eot'),
+        url('../Fonts/NexaLight.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Loader */
+
+.indexpreloader {
+    .loader_bg {
+        position: fixed;
+        z-index: 999999;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+    }
+
+    .loader {
+        border: 0 soild transparent;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: calc(50vh - 75px);
+        left: calc(50vw - 75px);
+    }
+
+    .loader:before,
+    .loader:after {
+        content: '';
+        border: 1em solid whitesmoke; //#591203;
+        border-radius: 50%;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: loader 2s linear infinite;
+        opacity: 0;
+    }
+
+    .loader:before {
+        animation-delay: .5s;
+    }
+
+    @keyframes loader {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 0;
+        }
+    }
+}
+
+
+/* Navbar Brand */
+.navbar {
+    font-family: 'NexaLight';
+    font-weight: bold;
+}
+
+// Animation Try
+
+.animate {
+    animation: transitionIn 0.75s;
+    color: whitesmoke;
+    font-family: NexaLight;
+    font-size: 32px;
+    text-align: justify;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Body */
+.home-body {
+    background-image: url("../Images/DefaultBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.about-body {
+    background-image: url("../Images/aboutusbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.contact-body {
+    background-image: url("../Images/contactusbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.donation-body {
+    background-image: url("../Images/donatebg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Home Body */
+.indexmaindiv {
+    font-family: 'NexaLight', Nexa, serif;
+    margin-top: 20%;
+    text-align: left;
+
+    .indexline1 {
+        text-align: left;
+        color: gold;
+        font-size: larger;
+    }
+
+    .indexline2 {
+        text-align: left;
+        color: rgb(241, 173, 173);
+        word-spacing: -4px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .indexline3 {
+        text-align: left;
+        color: whitesmoke
+    }
+
+    .donatebtn {
+        margin-top: 40px;
+        width: 43%;
+
+    }
+
+}
+
+/* Donate Body */
+.donatemaindiv {
+    font-family: 'NexaLight', Nexa, serif;
+    text-align: center;
+    justify-items: center;
+
+    .donatebox {
+        margin-top: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        width: 15em;
+        padding: 10px;
+        height: 10em;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        .donatetextarea{
+            margin-top: 60px;
+            
+        }
+
+    }
+}
+
+/* Footer */
+
+footer {
+    /* background-color: aliceblue; */
+    font-family: 'NexaLight';
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 600px) {
+    .home-body {
+        background-image: url("../Images/DefaultBg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    .donation-body {
+        background-image: url("../Images/donatebg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    .about-body {
+        background-image: url("../Images/aboutusbg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    .contact-body {
+        background-image: url("../Images/contactusbg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+}
+
+@media(max-width: 600px) {
+    .indexmaindiv {
+        margin-top: 85%;
+
+        .indexline1 {
+            text-align: left;
+            color: gold;
+            font-size: smaller;
+        }
+
+        .indexline2 {
+            text-align: left;
+            color: rgb(241, 173, 173);
+            // word-spacing: -4px;
+            font-size: larger;
+        }
+
+        .indexline3 {
+            text-align: left;
+            font-size: large;
+            color: whitesmoke
+        }
+
+        .donatebtn {
+            width: 80%
+        }
+
+        text-align: center;
+    }
+
+}
