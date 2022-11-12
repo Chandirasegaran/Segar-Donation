@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact US - Segar Donations</title>
+    <link rel="icon" type="image/x-icon" href="./assets/Icons/favicon.ico">
     <link rel="stylesheet" href="./assets/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/CSS/styles.css">
     <link rel="stylesheet" href="./assets/CSS/fontawesome.min.css">
 
 </head>
 
-<body class="contact-body container-lg">
+<body class="contact-body">
     <header>
         <nav class="navbar navbar-expand-lg bg-transparant navbar-dark ">
             <!--  navbar-static-top fixed-top   -->
@@ -34,6 +34,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="./contact.html">Contact Us</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./gallery.html">Gallery</a>
+                        </li>
                     </ul>
 
                 </div>
@@ -42,13 +45,62 @@
     </header>
 
     <div class="animate container-lg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit deserunt recusandae qui natus? Nulla maxime ducimus quo consequuntur aperiam error, ab dicta expedita natus amet nemo adipisci sint culpa suscipit tempore quasi dolorem eum. Corrupti, aliquam? Voluptatibus dignissimos dicta cum, architecto saepe temporibus ducimus! Eligendi doloremque vitae sunt assumenda animi explicabo, magni consequatur corporis odit sed, ullam officiis perferendis quae ducimus rerum harum sit vel dignissimos tempora fugiat. Vel doloribus sint ea! Fugit debitis omnis, nisi similique alias ad quam quasi illum, modi nam reiciendis molestias culpa fuga et mollitia cumque delectus neque dolorum. Dolorem, rerum itaque. Harum, sit.
+        <!-- <div class="row"> -->
+        <!-- <div class="col"> -->
+        <div class="card contactuscard">
+            <div class="card-header text-white "><i class="fa fa-envelope"></i> Contact us.
+            </div>
+            <div class="card-body">
+                <form action="https://formspree.io/f/moqbyopj" method="POST">
+
+                    <div class="mb-3 form-group container">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name"
+                            required>
+
+                    </div>
+                    <div class="mb-3  form-group container">
+                        <label for="Name" class="form-label">
+                            Phone Number:</label>
+                        <input type="number" name="Phone" class="form-control" id="Phone" placeholder="Enter your Phone"
+                            required>
+
+                    </div>
+                    <div class="mb-3 form-group container">
+                        <label for="Email" class="form-label">
+                            Your email: </label>
+
+                        <input type="email" name="Email" class="form-control" id="Email" placeholder="Enter your Email"
+                            required>
+                    </div>
+                    <div class="mb-3 form-group container">
+                        <label for="Message" class="form-label">
+                            Your message: </label>
+                        <textarea name="Message" class="form-control" id="Message" placeholder="Enter your Message here"
+                            required rows="4"></textarea>
+
+                    </div>
+                    <!-- your other form fields go here -->
+                    <div class="submitbtndiv mx container">
+                        <button type="submit" class="btn btn-outline-dark submitbtn">Send</button>
+                    </div>
+                </form>
+
+
+            </div>
+
+        </div>
+
+
+
     </div>
 
     <footer>
         <i class="fas fa-copyright">&nbsp;</i> SEGAR 2022
     </footer>
     <script src="./assets/JS/bootstrap.bundle.min.js"></script>
+    <script src="./assets/JS/scripts.js"></script>
+    <script src="./assets/JS/smtp.js"></script>
     <script src="./assets/JS/fa.js" crossorigin="anonymous"></script>
 </body>
 

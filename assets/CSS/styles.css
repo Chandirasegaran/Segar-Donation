@@ -1,0 +1,411 @@
+/* Fonts */
+@font-face {
+  font-family: "NexaLight";
+  src: url("../Fonts/NexaLight.ttf.woff") format("woff"), url("../Fonts/NexaLight.ttf.svg#NexaLight") format("svg"), url("../Fonts/NexaLight.ttf.eot"), url("../Fonts/NexaLight.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Loader */
+.indexpreloader .loader_bg {
+  position: fixed;
+  z-index: 999999;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+.indexpreloader .loader {
+  border: 0 soild transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+.indexpreloader .loader:before,
+.indexpreloader .loader:after {
+  content: "";
+  border: 1em solid whitesmoke;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: loader 2s linear infinite;
+          animation: loader 2s linear infinite;
+  opacity: 0;
+}
+.indexpreloader .loader:before {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+@-webkit-keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* Navbar Brand */
+.navbar {
+  font-family: "NexaLight";
+  font-weight: bold;
+  color: white;
+}
+
+.animate {
+  -webkit-animation: transitionIn 0.75s;
+          animation: transitionIn 0.75s;
+  color: whitesmoke;
+  font-family: NexaLight;
+  font-size: 32px;
+  text-align: justify;
+}
+
+@-webkit-keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Body */
+.home-body {
+  background-image: url("../Images/DefaultBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.about-body {
+  background-image: url("../Images/aboutusbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.contact-body {
+  background-image: url("../Images/contactusbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.donation-body {
+  background-image: url("../Images/donatenewbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.gallery-body {
+  background-image: url("../Images/gallerybg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* Home Body */
+.indexmaindiv {
+  font-family: "NexaLight", Nexa, serif;
+  margin-top: 20%;
+  text-align: left;
+}
+.indexmaindiv .indexline1 {
+  text-align: left;
+  color: gold;
+  font-size: larger;
+}
+.indexmaindiv .indexline2 {
+  text-align: left;
+  color: rgb(241, 173, 173);
+  word-spacing: -4px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.indexmaindiv .indexline3 {
+  text-align: left;
+  color: whitesmoke;
+}
+.indexmaindiv .donatebtn {
+  margin-top: 40px;
+  width: 43%;
+}
+
+/* Donate Body */
+.donatemaindiv {
+  font-family: "NexaLight", Nexa, serif;
+  text-align: center;
+  justify-items: center;
+}
+.donatemaindiv .donatebox {
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 15em;
+  padding: 10px;
+  height: 8em;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+.donatemaindiv .donatebox .donatetextarea {
+  margin-top: 2em;
+}
+.donatemaindiv .donatebox .razorpaybtn {
+  margin-top: 1em;
+}
+
+/* Gallery Body*/
+.gallery-box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 25em;
+  height: 8em;
+  border-radius: 10px;
+}
+.gallery-box .gallerytxt {
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 5px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: rgb(235, 222, 245);
+}
+
+/* About Body */
+.aboutmaindiv {
+  font-family: "NexaLight", Nexa, serif;
+  justify-items: center;
+}
+.aboutmaindiv .aboutbox {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 35em;
+  padding: 10px;
+  height: 14.5em;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+}
+.aboutmaindiv .aboutbox .abouttitle {
+  color: rgb(255, 0, 0);
+  margin: 0.5em;
+  font-weight: bold;
+}
+.aboutmaindiv .aboutbox .abouttxt {
+  align-items: center;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  margin-top: 0.25em;
+  margin-right: 0.5em;
+  font-size: 25px;
+  text-justify: distribute-all-lines;
+}
+.aboutmaindiv .aboutbox .aboutquote {
+  margin-left: 0.5em;
+  color: aquamarine;
+}
+
+/* Contact Us */
+.contactuscard {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  width: 800px;
+  height: auto;
+}
+.contactuscard .card-header {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: large;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.contactuscard .card-body {
+  font-size: large;
+  color: black;
+}
+.contactuscard .submitbtndiv {
+  text-align: center;
+}
+.contactuscard .submitbtndiv .submitbtn {
+  width: 50%;
+}
+
+/* Footer */
+footer {
+  /* background-color: aliceblue; */
+  font-family: "NexaLight";
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 600px) {
+  .home-body {
+    background-image: url("../Images/DefaultBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .donation-body {
+    background-image: url("../Images/donatenewbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .about-body {
+    background-image: url("../Images/aboutusbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .contact-body {
+    background-image: url("../Images/contactusbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .gallery-body {
+    background-image: url("../Images/gallerybg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 600px) {
+  .indexmaindiv {
+    margin-top: 75%;
+    text-align: center;
+  }
+  .indexmaindiv .indexline1 {
+    text-align: left;
+    color: gold;
+    font-size: smaller;
+  }
+  .indexmaindiv .indexline2 {
+    text-align: left;
+    color: rgb(241, 173, 173);
+    font-size: larger;
+  }
+  .indexmaindiv .indexline3 {
+    text-align: left;
+    font-size: large;
+    color: whitesmoke;
+  }
+  .indexmaindiv .donatebtn {
+    width: 80%;
+  }
+}
+@media (max-width: 650px) {
+  .donatemaindiv {
+    font-family: "NexaLight", Nexa, serif;
+    text-align: center;
+    justify-items: center;
+    font-size: 30px;
+  }
+  .donatemaindiv .donatebox {
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 10em;
+    padding: 10px;
+    height: 8em;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+  }
+  .donatemaindiv .donatebox .donatetextarea {
+    margin-top: 1em;
+  }
+  .donatemaindiv .donatebox .razorpaybtn {
+    margin-top: 1em;
+  }
+}
+@media (max-width: 600px) {
+  .gallery-box {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: auto;
+    padding: 10px;
+    height: 8em;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .contactuscard {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: auto;
+    height: auto;
+  }
+  .contactuscard .card-header {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: medium;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .contactuscard .card-body {
+    font-size: medium;
+    color: black;
+  }
+}/*# sourceMappingURL=styles.css.map */
